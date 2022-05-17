@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const SLIDE_WIDTH = 600;
+  const SLIDE_WIDTH = 1200;
   const prevBtn = document.querySelector("div.prev");
   const nextBtn = document.querySelector("div.next");
   const slides = document.querySelector("div.slides");

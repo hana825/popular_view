@@ -148,3 +148,19 @@ div.btn {
   align-items: center;
   z-index: 1;
 }
+
+#change {
+  display: flex;
+  justify-content: space-evenly;
+}
+#seoul_view {
+  visibility: visible;
+  position: absolute;
+}
+#incheon_view {
+  visibility: hidden;
+  position: absolute;
+}
+#incheon:hover #incheon_view {
+  visibility: visible;
+}
