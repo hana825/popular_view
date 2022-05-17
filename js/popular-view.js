@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const SLIDE_WIDTH = 1220;
+  const SLIDE_WIDTH = 1200;
   const prevBtn = document.querySelector("button.prev");
   const nextBtn = document.querySelector("button.next");
   const slides = document.querySelector("div.slides");
   const sldCount = document.querySelectorAll(
-    "div.slides attr_container"
+    "div.slides div.attr_container"
   ).length;
 
   let position = 0;
@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
     prevBtn.addEventListener("click", () => {
       if (curPosition > 0) {
         position += SLIDE_WIDTH;
-        console.log("먹히니?");
         slides.style.transform = `translateX(${position}px)`;
         curPosition--;
       }
@@ -21,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (nextBtn) {
     nextBtn.addEventListener("click", () => {
-      if (curPosition < sldCount - 1) {
+      if (curPosition < sldCount) {
         position -= SLIDE_WIDTH;
         slides.style.transform = `translateX(${position}px)`;
         curPosition++;
