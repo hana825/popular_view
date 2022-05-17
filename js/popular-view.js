@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const SLIDE_WIDTH = 600;
+  const SLIDE_WIDTH = 1220;
   const prevBtn = document.querySelector("button.prev");
   const nextBtn = document.querySelector("button.next");
   const slides = document.querySelector("div.slides");
@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     prevBtn.addEventListener("click", () => {
       if (curPosition > 0) {
         position += SLIDE_WIDTH;
+        console.log("먹히니?");
         slides.style.transform = `translateX(${position}px)`;
         curPosition--;
       }
