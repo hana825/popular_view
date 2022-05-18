@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (curPosition > 0) {
         position += SLIDE_WIDTH;
         slides.style.transform = `translateX(${position}px)`;
-        slides.style.transition = `${0.5}s ease-out`;
+        slides.style.transition = `${0.8}s ease-out`;
         curPosition--;
       }
     });
@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (nextBtn) {
     nextBtn.addEventListener("click", () => {
-      if (curPosition <= sldCount - 7) {
+      if (curPosition <= sldCount - 16) {
         position -= SLIDE_WIDTH;
         slides.style.transform = `translateX(${position}px)`;
-        slides.style.transition = `${0.5}s ease-out`;
+        slides.style.transition = `${0.8}s ease-out`;
         curPosition++;
       }
     });
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (curPosition_food > 0) {
         position_food += SLIDE_WIDTH;
         slides_food.style.transform = `translateX(${position_food}px)`;
-        slides_food.style.transition = `${0.5}s ease-out`;
+        slides_food.style.transition = `${0.8}s ease-out`;
         curPosition_food--;
       }
     });
@@ -51,10 +51,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (nextBtn_food) {
     nextBtn_food.addEventListener("click", () => {
-      if (curPosition_food <= sldCount_food - 7) {
+      if (curPosition_food <= sldCount_food - 16) {
         position_food -= SLIDE_WIDTH;
         slides_food.style.transform = `translateX(${position_food}px)`;
-        slides_food.style.transition = `${0.5}s ease-out`;
+        slides_food.style.transition = `${0.8}s ease-out`;
         curPosition_food++;
       }
     });
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (curPosition_stay > 0) {
         position_stay += SLIDE_WIDTH;
         slides_stay.style.transform = `translateX(${position_stay}px)`;
-        slides_stay.style.transition = `${0.5}s ease-out`;
+        slides_stay.style.transition = `${0.8}s ease-out`;
         curPosition_stay--;
       }
     });
@@ -81,10 +81,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (nextBtn_stay) {
     nextBtn_stay.addEventListener("click", () => {
-      if (curPosition_stay <= sldCount_stay - 7) {
+      if (curPosition_stay <= sldCount_stay - 16) {
         position_stay -= SLIDE_WIDTH;
         slides_stay.style.transform = `translateX(${position_stay}px)`;
-        slides_stay.style.transition = `${0.5}s ease-out`;
+        slides_stay.style.transition = `${0.8}s ease-out`;
         curPosition_stay++;
       }
     });

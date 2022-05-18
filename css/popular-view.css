@@ -149,18 +149,19 @@ div.btn {
   z-index: 1;
 }
 
-#change {
+.change {
   display: flex;
   justify-content: space-evenly;
 }
-#seoul_view {
-  visibility: visible;
+
+.seoul_view {
   position: absolute;
+  background-color: white;
+  z-index: 17;
 }
-#incheon_view {
-  visibility: hidden;
+.incheon_view {
   position: absolute;
-}
-#incheon:hover #incheon_view {
-  visibility: visible;
+  background-color: white;
+  /* visibility: hidden; */
+  /* z-index: 1; */
 }
